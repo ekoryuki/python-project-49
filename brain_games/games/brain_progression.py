@@ -25,7 +25,7 @@ def main():
         print(f'Question: {progression}')
         guess = prompt.integer('Your answer: ')
 
-        right_answers += check_the_answer(guess,correct, name)
+        right_answers += check_the_answer(guess, correct, name)
         praise_the_winner(right_answers, name)
 
 

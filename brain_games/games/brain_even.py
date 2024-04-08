@@ -17,8 +17,8 @@ def main():
         print(f'Question: {number}')
         guess = prompt.string('Your answer: ')
         correct = 'yes' if number % 2 == 0 else 'no'
-        
-        right_answers += check_the_answer(guess,correct, name)
+
+        right_answers += check_the_answer(guess, correct, name)
         praise_the_winner(right_answers, name)
 
 

@@ -26,9 +26,8 @@ def main():
             case '*':
                 correct = first_number * second_number
 
-        right_answers += check_the_answer(guess,correct, name)
+        right_answers += check_the_answer(guess, correct, name)
         praise_the_winner(right_answers, name)
-
 
 
 if __name__ == "__main__":

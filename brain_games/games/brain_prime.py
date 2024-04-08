@@ -4,6 +4,7 @@ import random
 from brain_games.scripts.check_the_answer import check_the_answer
 from brain_games.scripts.praise_the_winner import praise_the_winner
 
+
 def main():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -17,7 +18,7 @@ def main():
         guess = prompt.string('Your answer: ')
         correct = 'yes' if check_primality(number) else 'no'
 
-        right_answers += check_the_answer(guess,correct, name)
+        right_answers += check_the_answer(guess, correct, name)
         praise_the_winner(right_answers, name)
 
 
